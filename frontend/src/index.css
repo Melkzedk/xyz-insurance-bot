@@ -14,8 +14,3 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* small custom style */
-body {
-  @apply bg-slate-50;
-}
