@@ -7,7 +7,7 @@ export default function App() {
       <div className="w-full max-w-2xl">
         <header className="mb-4">
           <h1 className="text-2xl font-semibold">Insurance Q&A Bot (Prototype)</h1>
-          <p className="text-sm text-slate-600">Ask questions about the organization's policies, claims, & coverage.</p>
+          <p className="text-sm text-slate-600">Asks questions about the organization's policies, claims, & coverage.</p>
         </header>
 
         <main className="bg-white shadow rounded-lg p-4">
