@@ -6,7 +6,7 @@ export default function App() {
     <div className="min-h-screen flex items-center justify-center p-6">
       <div className="w-full max-w-2xl">
         <header className="mb-4">
-          <h1 className="text-2xl font-semibold">Insurances Q&A Bot (Prototype)</h1>
+          <h1 className="text-2xl font-semibold">Insurancessss Q&A Bot (Prototype)</h1>
           <p className="text-sm text-slate-600">Ask question about the organization's policies, claims, & coverage.</p>
         </header>
 
