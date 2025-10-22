@@ -7,7 +7,11 @@ const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:5000/api";
 export default function ChatBox() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([
-    { id: "bot-welcome", sender: "bot", text: "👋 Hello! Ask me about insurance policies, claims, or coverage (prototype)." }
+    {
+      id: "bot-welcome",
+      sender: "bot",
+      text: "👋 Hello! Ask me about insurance policies, claims, or coverage (prototype).",
+    },
   ]);
   const [loading, setLoading] = useState(false);
   const bottomRef = useRef();
@@ -31,12 +35,23 @@ export default function ChatBox() {
         const botMsg = { id: Date.now() + "-b", sender: "bot", text: ansText };
         setMessages((m) => [...m, botMsg]);
       } else {
-        const fallback = resp.data.message || "Sorry, I don't have that information yet.";
-        setMessages((m) => [...m, { id: Date.now() + "-b", sender: "bot", text: fallback }]);
+        const fallback =
+          resp.data.message || "Sorry, I don't have that information yet.";
+        setMessages((m) => [
+          ...m,
+          { id: Date.now() + "-b", sender: "bot", text: fallback },
+        ]);
       }
     } catch (err) {
       console.error(err);
-      setMessages((m) => [...m, { id: Date.now() + "-b", sender: "bot", text: "⚠️ Server error. Try again later." }]);
+      setMessages((m) => [
+        ...m,
+        {
+          id: Date.now() + "-b",
+          sender: "bot",
+          text: "⚠️ Server error. Try again later..",
+        },
+      ]);
     } finally {
       setLoading(false);
     }
@@ -79,7 +94,11 @@ export default function ChatBox() {
         />
 
         <div className="flex justify-between items-center mt-3">
-          <p className="text-sm text-gray-500">Press <kbd className="px-1 py-0.5 bg-gray-100 border rounded">Enter</kbd> to send</p>
+          <p className="text-sm text-gray-500">
+            Press{" "}
+            <kbd className="px-1 py-0.5 bg-gray-100 border rounded">Enter</kbd>{" "}
+            to send
+          </p>
 
           <button
             onClick={sendQuestion}
