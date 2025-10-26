@@ -105,7 +105,7 @@ export default function ChatBox() {
             className="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 transition-colors duration-200 disabled:opacity-50"
             disabled={!input.trim() || loading}
           >
-            {loading ? "Thinking...." : "Send"}
+            {loading ? "Thinking..." : "Click Here To Send"}
           </button>
         </div>
       </div>
