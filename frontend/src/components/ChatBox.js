@@ -10,7 +10,7 @@ export default function ChatBox() {
     {
       id: "bot-welcome",
       sender: "bot",
-      text: "👋 Hello There! Ask me about insurance policies, claims, or coverage (prototype).",
+      text: "👋 Hello! Ask me about insurance policies, claims, or coverage (prototype).",
     },
   ]);
   const [loading, setLoading] = useState(false);
