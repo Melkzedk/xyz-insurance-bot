@@ -89,7 +89,7 @@ export default function ChatBox() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKey}
-          placeholder="Type  insurance question here and press Enter..."
+          placeholder="Type your insurance question here and press Enter..."
           className="w-full p-3 border border-gray-300 rounded-lg resize-none h-20 focus:outline-none focus:ring-2 focus:ring-indigo-500"
         />
 
