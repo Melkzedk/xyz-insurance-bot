@@ -1,5 +1,5 @@
 export default function Message({ sender, text }) {
-  const isUser = sender === "user";
+  const isUser = sender === "users";
 
   return (
     <div className={`flex ${isUser ? "justify-end" : "justify-start"}`}>
