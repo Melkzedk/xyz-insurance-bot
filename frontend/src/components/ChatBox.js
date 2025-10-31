@@ -97,7 +97,7 @@ export default function ChatBox() {
           <p className="text-sm text-gray-500">
             Press{" "}
             <kbd className="px-1 py-0.5 bg-gray-100 border rounded">Enter</kbd>{" "}
-            to send...
+            to send
           </p>
 
           <button
