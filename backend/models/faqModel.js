@@ -11,7 +11,7 @@ const faqSchema = new mongoose.Schema({
 //Create simple text index only
 faqSchema.index({ question: "text", answer: "text", tags: "text" });
 
-//Create modes and build index manually
+//Create model and build index manually
 const FAQ = mongoose.model("FAQ", faqSchema);
 
 // Ensure the index is built
