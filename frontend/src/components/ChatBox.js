@@ -36,7 +36,7 @@ export default function ChatBox() {
         setMessages((m) => [...m, botMsg]);
       } else {
         const fallback =
-          resp.data.message || "Sorry, I don't have that information yet.";
+          resp.data.message || "Sorry, I don't have that information yet...";
         setMessages((m) => [
           ...m,
           { id: Date.now() + "-b", sender: "bot", text: fallback },
