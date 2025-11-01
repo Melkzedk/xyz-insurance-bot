@@ -7,8 +7,8 @@ const faqSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now },
 });
 
-//  Do NOT use collation in schema options
-// ✅ Create simple text index only
+//Do NOT use collation in schema options
+//Create simple text index only
 faqSchema.index({ question: "text", answer: "text", tags: "text" });
 
 //Create model and build index manually
