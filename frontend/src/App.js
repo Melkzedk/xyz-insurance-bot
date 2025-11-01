@@ -10,7 +10,7 @@ export default function App() {
             Insurance Q&A Bot (Prototype)
           </h1>
           <p className="text-sm text-slate-600">
-            Ask question about the organization's policies, claims, & coverage.
+            Ask any question about the organization's policies, claims, & coverage.
           </p>
         </header>
 
