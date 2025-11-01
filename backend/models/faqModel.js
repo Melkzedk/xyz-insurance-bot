@@ -10,7 +10,10 @@ const faqSchema = new mongoose.Schema(
   { collation: { locale: "en", strength: 2 } }
 );
 
-// Create a text index for simple text search
 faqSchema.index({ question: "text", answer: "text", tags: "text" });
 
-module.exports = mongoose.model("FAQ", faqSchema);
+// Ensure index creation
+const FAQ = mongoose.model("FAQ", faqSchema);
+FAQ.createIndexes(); // ✅ build the text index
+
+module.exports = FAQ;
